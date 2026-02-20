@@ -1,33 +1,65 @@
-HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# ==========================================
+# 统一根目录 .gitignore - SmartPic-Hub
+# ==========================================
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+### --- 后端 (backend) 过滤规则 --- ###
+backend/HELP.md
+backend/target/
+# 允许追踪 maven wrapper 核心 jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+# 防止误删某些特殊目录下的 target
+!backend/**/src/main/**/target/
+!backend/**/src/test/**/target/
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
+# IDE & 工具 (后端)
+backend/.apt_generated
+backend/.classpath
+backend/.factorypath
+backend/.project
+backend/.settings
+backend/.springBeans
+backend/.sts4-cache
+backend/build/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# 敏感配置文件 (核心！)
+backend/src/main/resources/application-local.yml
+backend/src/main/resources/application.yml
 
-### VS Code ###
-.vscode/
+
+### --- 前端 (frontend) 过滤规则 --- ###
+# 依赖与打包
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/coverage/
+
+# 日志
+frontend/logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# 测试与工具
+frontend/cypress/videos/
+frontend/cypress/screenshots/
+frontend/*.tsbuildinfo
+frontend/*.local
+
+
+### --- 通用 IDE & 系统过滤 (覆盖全路径) --- ###
+# 忽略所有层级的 .idea 文件夹
+**/.idea/
+**/*.iws
+**/*.iml
+**/*.ipr
+**/.vscode/
+**/*.sw?
+**/.DS_Store
+
+# NetBeans 相关
+**/nbproject/private/
+**/nbbuild/
+**/dist/
+**/nbdist/
+**/.nb-gradle/

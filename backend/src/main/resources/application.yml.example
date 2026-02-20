@@ -1,0 +1,36 @@
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+spring:
+  application:
+    name: gallery-management
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/gallery
+    username: YOUR_USERNAME
+    password: YOUR_PASSWORD_HERE
+mybatis-plus:
+  configuration:
+    # MyBatis 配置
+    map-underscore-to-camel-case: false
+    # 在开发环境打印日志
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 逻辑删除
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-delete-field: isDelete
+      logic-not-delete-value: 0
+
+# 接口文档配置
+knife4j:
+  enable: true
+  openapi:
+    title: interface doc
+    version: v4.0
+    group:
+      default:
+        api-rule: package
+        api-rule-resources:
+          - com.gallery.gallerymanagement.Controller
