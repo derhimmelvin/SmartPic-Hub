@@ -1,4 +1,4 @@
-package com.gallery.gallerymanagement.exception;
+package com.smartpichub.exception;
 
 
 // 自定义异常工具类（类似于assert）

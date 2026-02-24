@@ -1,7 +1,7 @@
-package com.gallery.gallerymanagement.Controller;
+package com.smartpichub.controller;
 
-import com.gallery.gallerymanagement.commmon.BaseResponse;
-import com.gallery.gallerymanagement.commmon.ResultUtils;
+import com.smartpichub.common.BaseResponse;
+import com.smartpichub.common.ResultUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

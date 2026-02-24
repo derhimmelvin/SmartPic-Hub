@@ -1,4 +1,4 @@
-package com.gallery.gallerymanagement.exception;
+package com.smartpichub.exception;
 
 import lombok.Getter;
 

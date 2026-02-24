@@ -1,6 +1,6 @@
-package com.gallery.gallerymanagement.commmon;
+package com.smartpichub.common;
 
-import com.gallery.gallerymanagement.exception.ErrorCode;
+import com.smartpichub.exception.ErrorCode;
 
 public class ResultUtils {
 

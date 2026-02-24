@@ -1,4 +1,4 @@
-package com.gallery.gallerymanagement;
+package com.smartpichub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

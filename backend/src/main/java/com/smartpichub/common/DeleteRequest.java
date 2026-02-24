@@ -1,4 +1,4 @@
-package com.gallery.gallerymanagement.commmon;
+package com.smartpichub.common;
 
 import lombok.Data;
 

@@ -1,18 +1,17 @@
-package com.gallery.gallerymanagement;
+package com.smartpichub;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @SpringBootApplication
-@MapperScan("com.gallery.gallerymanagement.Mapper")
+@MapperScan("com.smartpichub.mapper")
 @EnableAspectJAutoProxy(exposeProxy = true)
-public class GalleryManagementApplication {
+public class SmartPicHubApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GalleryManagementApplication.class, args);
+        SpringApplication.run(SmartPicHubApplication.class, args);
         System.out.println("backend is running");
     }
 

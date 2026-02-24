@@ -1,6 +1,6 @@
-package com.gallery.gallerymanagement.Mapper;
+package com.smartpichub.mapper;
 
-import com.gallery.gallerymanagement.model.entity.User;
+import com.smartpichub.model.entity.User;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

@@ -1,4 +1,4 @@
-package com.gallery.gallerymanagement.model.enums;
+package com.smartpichub.model.enums;
 
 import lombok.Getter;
 

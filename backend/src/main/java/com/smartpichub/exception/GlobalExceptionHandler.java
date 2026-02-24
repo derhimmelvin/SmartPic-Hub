@@ -1,7 +1,7 @@
-package com.gallery.gallerymanagement.exception;
+package com.smartpichub.exception;
 
-import com.gallery.gallerymanagement.commmon.BaseResponse;
-import com.gallery.gallerymanagement.commmon.ResultUtils;
+import com.smartpichub.common.BaseResponse;
+import com.smartpichub.common.ResultUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
