@@ -1,7 +1,9 @@
 package com.smartpichub.controller;
 
+import com.smartpichub.annotation.AuthCheck;
 import com.smartpichub.common.BaseResponse;
 import com.smartpichub.common.ResultUtils;
+import com.smartpichub.constant.UserConstant;
 import com.smartpichub.exception.ErrorCode;
 import com.smartpichub.exception.ThrowUtils;
 import com.smartpichub.model.dto.UserLoginRequest;
@@ -25,6 +27,7 @@ public class UserController {
      * 用户注册
      */
     @PostMapping("/register")
+//    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
     public BaseResponse<Long> userRegister(@RequestBody UserRegisterRequest userRegisterRequest) {
         ThrowUtils.throwIf(userRegisterRequest == null, ErrorCode.PARAMS_ERROR);
         String userAccount = userRegisterRequest.getUserAccount();
