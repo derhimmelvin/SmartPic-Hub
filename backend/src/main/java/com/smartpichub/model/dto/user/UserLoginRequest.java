@@ -1,4 +1,4 @@
-package com.smartpichub.model.dto;
+package com.smartpichub.model.dto.user;
 
 import lombok.Data;
 

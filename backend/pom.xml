@@ -30,12 +30,17 @@
 <!--            <version>2.3.0</version>-->
 <!--        </dependency>-->
 
-<!--    操控数据库框架    https://baomidou.com/getting-started/-->
+<!--    mybatis操控数据库框架    https://baomidou.com/getting-started/-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.5.15</version>
+            <version>3.5.3.1</version>
         </dependency>
+<!--        &lt;!&ndash; MyBatis Plus 分页插件 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>mybatis-plus-jsqlparser-4.9</artifactId>-->
+<!--        </dependency>-->
 <!--    Java工具类库 https://hutool.cn/-->
         <dependency>
             <groupId>cn.hutool</groupId>
@@ -73,6 +78,13 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-bom</artifactId>-->
+<!--                <version>3.5.9</version>-->
+<!--                <type>pom</type>-->
+<!--                <scope>import</scope>-->
+<!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
